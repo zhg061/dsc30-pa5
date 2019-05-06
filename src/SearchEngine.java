@@ -1,5 +1,10 @@
+/*
+ * NAME: Zhaoyi Guo
+ * PID: A15180402
+ */
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -20,7 +25,16 @@ public class SearchEngine {
 				String document = scanner.nextLine().trim();
 				String keywords[] = scanner.nextLine().split(" ");
 				
-				//TODO
+				//reads the file and populates the BST with nodes.
+				// Each keyword is a key in the BST
+				// and the document name is added to the LinkedList of the keyword.
+				for (int i = 0; i < keywords.length; i++) {
+					String keyword = keywords[i].toLowerCase();
+					if (!searchTree.findKey(keyword)) {
+						searchTree.insert(keyword);
+						searchTree.insertData(keyword, document);
+					}
+				}
 				
 			}
 			scanner.close();
@@ -38,7 +52,19 @@ public class SearchEngine {
 	 */
 	public static void searchMyQuery(BSTree<String> searchTree, String query) {
 		
-		//TODO
+		//Given any query string, you must print all documents that contain
+		// that query string. If there are multiple words in a query string,
+		// then you must return the intersection* of documents that contain all the words.
+		LinkedList<String> document = searchTree.findDataList(query);
+		print(query, document);
+		String[] list = query.split(" ");
+		if (list.length > 1) {
+			for (int i = 0; i < list.length; i++) {
+				LinkedList<String> document1 = searchTree.findDataList(list[i]);
+				print(list[i], document1);
+			}
+		}
+//		how to check if the document is null
 	}
 	
 	/*Print method 

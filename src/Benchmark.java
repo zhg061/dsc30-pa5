@@ -1,3 +1,7 @@
+/*
+ * NAME: Zhaoyi Guo
+ * PID: A15180402
+ */
 import java.util.ArrayList;
 
 /**
@@ -26,7 +30,6 @@ public class Benchmark {
         for (int i = 0; i < size; i++) {
             randNums.add((int) (Math.random() * ((max - min) + 1)) + min);
         }
-//        ffff
         return randNums;
     }
 
