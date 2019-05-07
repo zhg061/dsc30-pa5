@@ -14,7 +14,7 @@ Documents related to yellow plant are: [pineapple]
 Documents related to yellow are: [pikachu]
 
 Query = “sunny california”
-Output:
+       Output:
 Documents related to sunny california are: [beach, san-diego]
 Documents related to sunny are: [manhattan]
 Documents related to california are: [los-angeles, travel, yosemite]

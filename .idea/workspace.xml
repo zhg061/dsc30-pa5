@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f76883a-05cc-45bf-a73b-b263a93a538b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BSTreeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BinarySearchArrayTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dsc30-pa5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dsc30-pa5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dsc30-pa5/BSTree$BSTNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dsc30-pa5/BSTree$BSTNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dsc30-pa5/BSTree$BSTree_Iterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dsc30-pa5/BSTree$BSTree_Iterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dsc30-pa5/BSTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dsc30-pa5/BSTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dsc30-pa5/BSTreeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dsc30-pa5/BSTreeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dsc30-pa5/BinarySearchArrayTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dsc30-pa5/BinarySearchArrayTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dsc30-pa5/PA5_InputOutput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dsc30-pa5/PA5_InputOutput.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/dsc30-pa5/SearchEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/dsc30-pa5/SearchEngine.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BSTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BSTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Benchmark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Benchmark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinarySearchArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearchArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BSTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BSTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearchArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearchArrayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PA5_InputOutput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/PA5_InputOutput.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SearchEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchEngine.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,12 +26,15 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="dsc30-pa5" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Benchmark.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-561">
+            <state relative-caret-position="51">
               <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
               <folding>
                 <element signature="e#0#6797#0" expanded="true" />
@@ -38,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PA5_InputOutput.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+            <state relative-caret-position="1037">
+              <caret line="61" column="25" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -47,53 +55,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lalala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+            <state relative-caret-position="153">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SearchEngine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#3140#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BSTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="292" column="9" lean-forward="true" selection-start-line="292" selection-start-column="9" selection-end-line="292" selection-end-column="9" />
+            <state relative-caret-position="8211">
+              <caret line="486" column="34" selection-start-line="486" selection-start-column="34" selection-end-line="486" selection-end-column="34" />
               <folding>
-                <element signature="e#0#9503#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BinarySearchArray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="3" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#3056#0" expanded="true" />
-                <element signature="e#390#391#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#598#599#0" expanded="true" />
-                <element signature="e#644#645#0" expanded="true" />
-                <element signature="e#3572#3573#0" expanded="true" />
-                <element signature="e#3613#3614#0" expanded="true" />
-                <element signature="e#3722#3723#0" expanded="true" />
-                <element signature="e#3780#3781#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,10 +76,33 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinarySearchArrayTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="42" column="110" selection-start-line="42" selection-start-column="110" selection-end-line="42" selection-end-column="110" />
+            <state relative-caret-position="113">
+              <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
               <folding>
-                <element signature="e#0#2214#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/SearchEngine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="66" column="46" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BSTreeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-353">
+              <caret line="193" column="20" selection-start-line="193" selection-start-column="20" selection-end-line="193" selection-end-column="20" />
+              <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -129,6 +126,22 @@
       <find>bst</find>
       <find>los</find>
       <find>nice</find>
+      <find>converted</find>
+      <find>new</find>
+      <find>print(</find>
+      <find>california</find>
+      <find>sunny</find>
+      <find>surf</find>
+      <find>beach</find>
+      <find>remove</find>
+      <find>bin</find>
+      <find>arrayequal</find>
+      <find>arraye</find>
+      <find>query</find>
+      <find>ille</find>
+      <find>finddata</find>
+      <find>findhei</find>
+      <find>findke</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,20 +150,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/BSTree.java" />
-        <option value="$PROJECT_DIR$/src/BSTreeTest.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchArray.java" />
         <option value="$PROJECT_DIR$/src/Benchmark.java" />
-        <option value="$PROJECT_DIR$/src/SearchEngine.java" />
+        <option value="$PROJECT_DIR$/src/PA5_InputOutput.txt" />
         <option value="$PROJECT_DIR$/src/BinarySearchArrayTest.java" />
+        <option value="$PROJECT_DIR$/src/SearchEngine.java" />
+        <option value="$PROJECT_DIR$/src/BSTreeTest.java" />
+        <option value="$PROJECT_DIR$/src/BSTree.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1055" />
-    <option name="height" value="1031" />
+    <option name="x" value="177" />
+    <option name="y" value="48" />
+    <option name="width" value="1223" />
+    <option name="height" value="971" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -219,7 +233,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SearchEngine">
+  <component name="RunManager" selected="JUnit.BSTreeTest.intersection">
     <configuration name="Benchmark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Benchmark" />
       <module name="dsc30-pa5" />
@@ -230,37 +244,36 @@
     <configuration name="SearchEngine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SearchEngine" />
       <module name="dsc30-pa5" />
-      <option name="PROGRAM_PARAMETERS" value="lalala.txt california" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="PROGRAM_PARAMETERS" value="./src/lalala &quot;SUNNY California&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearchArrayTest.find" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BSTreeTest.intersection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dsc30-pa5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BinarySearchArrayTest" />
-      <option name="METHOD_NAME" value="find" />
+      <option name="MAIN_CLASS_NAME" value="BSTreeTest" />
+      <option name="METHOD_NAME" value="intersection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearchArrayTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BSTreeTest.levelCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dsc30-pa5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BinarySearchArrayTest" />
-      <option name="METHOD_NAME" value="insert" />
+      <option name="MAIN_CLASS_NAME" value="BSTreeTest" />
+      <option name="METHOD_NAME" value="levelCount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearchArrayTest.printArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BSTreeTest.remove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dsc30-pa5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BinarySearchArrayTest" />
-      <option name="METHOD_NAME" value="printArray" />
+      <option name="MAIN_CLASS_NAME" value="BSTreeTest" />
+      <option name="METHOD_NAME" value="remove" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -269,17 +282,17 @@
     <list>
       <item itemvalue="Application.Benchmark" />
       <item itemvalue="Application.SearchEngine" />
-      <item itemvalue="JUnit.BinarySearchArrayTest.find" />
-      <item itemvalue="JUnit.BinarySearchArrayTest.insert" />
-      <item itemvalue="JUnit.BinarySearchArrayTest.printArray" />
+      <item itemvalue="JUnit.BSTreeTest.intersection" />
+      <item itemvalue="JUnit.BSTreeTest.levelCount" />
+      <item itemvalue="JUnit.BSTreeTest.remove" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BSTreeTest.intersection" />
+        <item itemvalue="JUnit.BSTreeTest.remove" />
+        <item itemvalue="JUnit.BSTreeTest.levelCount" />
         <item itemvalue="Application.SearchEngine" />
         <item itemvalue="Application.Benchmark" />
-        <item itemvalue="JUnit.BinarySearchArrayTest.printArray" />
-        <item itemvalue="JUnit.BinarySearchArrayTest.find" />
-        <item itemvalue="JUnit.BinarySearchArrayTest.insert" />
       </list>
     </recent_temporary>
   </component>
@@ -287,48 +300,48 @@
     <configuration />
   </component>
   <component name="TestHistory">
-    <history-entry file="BinarySearchArrayTest_insert - 2019.05.05 at 09h 33m 14s.xml">
-      <configuration name="BinarySearchArrayTest.insert" configurationId="JUnit" />
+    <history-entry file="BSTreeTest_remove - 2019.05.06 at 20h 38m 31s.xml">
+      <configuration name="BSTreeTest.remove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinarySearchArrayTest_insert - 2019.05.05 at 09h 33m 27s.xml">
-      <configuration name="BinarySearchArrayTest.insert" configurationId="JUnit" />
+    <history-entry file="BSTreeTest_remove - 2019.05.06 at 20h 39m 45s.xml">
+      <configuration name="BSTreeTest.remove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinarySearchArrayTest_insert - 2019.05.05 at 09h 46m 16s.xml">
-      <configuration name="BinarySearchArrayTest.insert" configurationId="JUnit" />
+    <history-entry file="BSTreeTest_remove - 2019.05.06 at 20h 40m 07s.xml">
+      <configuration name="BSTreeTest.remove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinarySearchArrayTest_insert - 2019.05.05 at 09h 46m 34s.xml">
-      <configuration name="BinarySearchArrayTest.insert" configurationId="JUnit" />
+    <history-entry file="BSTreeTest_remove - 2019.05.06 at 20h 40m 10s.xml">
+      <configuration name="BSTreeTest.remove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinarySearchArrayTest_insert - 2019.05.05 at 09h 46m 57s.xml">
-      <configuration name="BinarySearchArrayTest.insert" configurationId="JUnit" />
+    <history-entry file="BSTreeTest_remove - 2019.05.06 at 20h 40m 26s.xml">
+      <configuration name="BSTreeTest.remove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinarySearchArrayTest_find - 2019.05.05 at 09h 47m 55s.xml">
-      <configuration name="BinarySearchArrayTest.find" configurationId="JUnit" />
+    <history-entry file="BSTreeTest_remove - 2019.05.06 at 20h 40m 44s.xml">
+      <configuration name="BSTreeTest.remove" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinarySearchArrayTest_find - 2019.05.05 at 09h 50m 13s.xml">
-      <configuration name="BinarySearchArrayTest.find" configurationId="JUnit" />
+    <history-entry file="BSTreeTest_intersection - 2019.05.06 at 20h 44m 20s.xml">
+      <configuration name="BSTreeTest.intersection" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinarySearchArrayTest_find - 2019.05.05 at 09h 50m 37s.xml">
-      <configuration name="BinarySearchArrayTest.find" configurationId="JUnit" />
+    <history-entry file="BSTreeTest_intersection - 2019.05.06 at 20h 44m 50s.xml">
+      <configuration name="BSTreeTest.intersection" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinarySearchArrayTest_printArray - 2019.05.05 at 09h 51m 38s.xml">
-      <configuration name="BinarySearchArrayTest.printArray" configurationId="JUnit" />
+    <history-entry file="BSTreeTest_intersection - 2019.05.06 at 21h 02m 06s.xml">
+      <configuration name="BSTreeTest.intersection" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BinarySearchArrayTest_printArray - 2019.05.05 at 09h 53m 14s.xml">
-      <configuration name="BinarySearchArrayTest.printArray" configurationId="JUnit" />
+    <history-entry file="BSTreeTest_intersection - 2019.05.06 at 21h 02m 33s.xml">
+      <configuration name="BSTreeTest.intersection" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19919029" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988345" visible="true" weight="0.024291499" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Favorites" order="3" sideWeight="0.5011655" side_tool="true" visible="true" weight="0.024291499" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3676732" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23801066" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -344,18 +357,22 @@
       <window_info anchor="right" id="Palette&#9;" order="4" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bbb" />
+    <option name="LAST_COMMIT_MESSAGE" value="bbb" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BSTreeTest.java</url>
-          <line>143</line>
+          <line>145</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/BSTreeTest.java</url>
-          <line>71</line>
+          <line>73</line>
           <properties class="BSTreeTest" method="findKey">
             <option name="EMULATED" value="true" />
           </properties>
@@ -412,49 +429,16 @@
     <entry file="file://$PROJECT_DIR$/dsc30sp19-startercode/PA5/Benchmark.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BSTreeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#4419#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BinarySearchArray.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#3056#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#3572#3573#0" expanded="true" />
-            <element signature="e#3613#3614#0" expanded="true" />
-            <element signature="e#3722#3723#0" expanded="true" />
-            <element signature="e#3780#3781#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinarySearchArrayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="42" column="110" selection-start-line="42" selection-start-column="110" selection-end-line="42" selection-end-column="110" />
-          <folding>
-            <element signature="e#0#2214#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Benchmark.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
+        <state relative-caret-position="51">
           <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
           <folding>
             <element signature="e#0#6797#0" expanded="true" />
@@ -464,35 +448,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PA5_InputOutput.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BSTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="292" column="9" lean-forward="true" selection-start-line="292" selection-start-column="9" selection-end-line="292" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#9503#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1037">
+          <caret line="61" column="25" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lalala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="67" selection-start-line="13" selection-start-column="67" selection-end-line="13" selection-end-column="67" />
+        <state relative-caret-position="153">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinarySearchArrayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BSTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-353">
+          <caret line="193" column="20" selection-start-line="193" selection-start-column="20" selection-end-line="193" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SearchEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="93">
+          <caret line="66" column="46" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="46" />
           <folding>
-            <element signature="e#0#3140#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BSTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8211">
+          <caret line="486" column="34" selection-start-line="486" selection-start-column="34" selection-end-line="486" selection-end-column="34" />
+          <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>

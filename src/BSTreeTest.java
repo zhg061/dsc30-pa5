@@ -2,6 +2,8 @@
  * NAME: Zhaoyi Guo
  * PID: A15180402
  */
+import org.junit.Test;
+import java.util.ArrayList;
 import static org.junit.Assert.*;
 import java.util.Iterator;
 
@@ -156,5 +158,80 @@ public class BSTreeTest {
         assertEquals(new Integer(80), iter.next());
         assertEquals(new Integer(100), iter.next());
 
+    }
+
+    @Test
+    public void intersection() {
+        test2.insert(9);
+        test2.insert(10);
+        test2.insert(7);
+        test2.insert(100);
+        test2.insert(80);
+        Iterator<Integer> iter = test2.iterator();
+        test1.insert(9);
+        test1.insert(80);
+        test1.insert(7);
+        test1.insert(6);
+        test1.insert(5);
+        test1.insert(4);
+        Iterator<Integer> iter1 = test1.iterator();
+        ArrayList<Integer> temp = new ArrayList<Integer>();
+        temp.add(7);
+        temp.add(9);
+        temp.add(80);
+        assertEquals(temp, test1.intersection(iter, iter1));
+        test3.insert(19);
+        test3.insert(80);
+        test3.insert(17);
+        test3.insert(6);
+        test3.insert(15);
+        test3.insert(4);
+        Iterator<Integer> iter3 = test3.iterator();
+        iter1 = test1.iterator();
+        ArrayList<Integer> temp1 = new ArrayList<Integer>();
+        temp1.add(4);
+        temp1.add(6);
+        temp1.add(80);
+        assertEquals(temp1, test1.intersection(iter3, iter1));
+    }
+
+    @Test
+    public void levelCount() {
+        test2.insert(9);
+        test2.insert(10);
+        test2.insert(7);
+        test2.insert(100);
+        test2.insert(80);
+        assertEquals(1, test2.levelCount(0));
+        assertEquals(2, test2.levelCount(1));
+        assertEquals(1, test2.levelCount(2));
+        assertEquals(1, test2.levelCount(3));
+        test1.insert(9);
+        test1.insert(8);
+        test1.insert(11);
+        test1.insert(7);
+        test1.insert(15);
+        test1.insert(10);
+        assertEquals(1, test1.levelCount(0));
+        assertEquals(2, test1.levelCount(1));
+        assertEquals(3, test1.levelCount(2));
+        assertEquals(-1, test1.levelCount(3));
+    }
+
+    @Test
+    public void remove() {
+        test1.insert(9);
+        test1.insert(8);
+        test1.insert(11);
+        test1.insert(7);
+        test1.insert(15);
+        test1.insert(10);
+        assertTrue(test1.remove(9));
+        assertTrue(test1.remove(15));
+        assertTrue(test1.remove(7));
+        assertTrue(test1.remove(8));
+        assertFalse(test1.remove(99));
+        assertTrue(test1.remove(10));
+        assertFalse(test1.remove(10));
     }
 }

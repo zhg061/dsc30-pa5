@@ -34,6 +34,9 @@ public class SearchEngine {
 						searchTree.insert(keyword);
 						searchTree.insertData(keyword, document);
 					}
+					else {
+						searchTree.insertData(keyword, document);
+					}
 				}
 				
 			}
@@ -55,16 +58,92 @@ public class SearchEngine {
 		//Given any query string, you must print all documents that contain
 		// that query string. If there are multiple words in a query string,
 		// then you must return the intersection* of documents that contain all the words.
-		LinkedList<String> document = searchTree.findDataList(query);
-		print(query, document);
+
 		String[] list = query.split(" ");
-		if (list.length > 1) {
+		LinkedList<String> documents = new LinkedList<>();
+		if (list.length == 1) {
+			LinkedList<String> document = new LinkedList<String>();
+			try{
+				document = searchTree.findDataList(query.toLowerCase());
+				print(query, document);
+			}
+			catch(IllegalArgumentException e)
+			{
+				print(query, null);
+			}
+
+		}
+		else if (list.length > 1) {
+			//find the documents that all of them appeared
+			boolean found = true;
 			for (int i = 0; i < list.length; i++) {
-				LinkedList<String> document1 = searchTree.findDataList(list[i]);
-				print(list[i], document1);
+				LinkedList<String> currDocuments;
+				try{
+					currDocuments = searchTree.findDataList(list[i].toLowerCase());
+				}
+				catch(IllegalArgumentException e)
+				{
+					found = false;
+					continue;
+				}
+				for (int j = 0; j < currDocuments.size(); j++) {
+					if (!documents.contains(currDocuments.get(j))) {
+						documents.add(currDocuments.get(j));
+					}
+				}
+			}
+			LinkedList<String> allFiles = new LinkedList<String>(documents);
+
+			for (int i = 0; i < list.length; i++) {
+				LinkedList<String> currDocuments;
+				try{
+					currDocuments = searchTree.findDataList(list[i].toLowerCase());
+				}
+				catch(IllegalArgumentException e)
+				{
+					continue;
+				}
+				for (int j = 0; j < documents.size(); j++) {
+					if (!currDocuments.contains(documents.get(j))) {
+						documents.remove(documents.get(j));
+						j--;
+					}
+				}
+			}
+
+			//remove files that has all three from allFiles
+
+
+			if(found) {
+				print(query, documents);
+				allFiles.removeAll(documents);
+			}
+			else
+				print(query, null);
+
+			//find the documents that each appeared
+			for (int i = 0; i < list.length; i++) {
+				LinkedList<String> currDocuments;
+				try{
+					currDocuments = searchTree.findDataList(list[i].toLowerCase());
+				}
+				catch(IllegalArgumentException e)
+				{
+					print(list[i], null);
+					continue;
+				}
+				for (int j = 0; j < currDocuments.size(); j++) {
+					if (!allFiles.contains(currDocuments.get(j))) {
+						currDocuments.remove(currDocuments.get(j));
+						j--;
+					}
+				}
+				if (!currDocuments.isEmpty()) {
+					print(list[i], currDocuments);
+				}
+				allFiles.removeAll(currDocuments);
 			}
 		}
-//		how to check if the document is null
 	}
 	
 	/*Print method 
@@ -93,7 +172,7 @@ public class SearchEngine {
 		
 		String fileName = args[0];
 		String query = args[1];
-		
+		System.out.println(query);
 		//Create my BST from file
 		boolean check = populateSearchTree(searchTree, fileName);
 		if(check == false) {

@@ -7,6 +7,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.NoSuchElementException;
 import java.util.Stack;
+import java.util.ArrayList;
 
 /**
  * this class implements a generic binary search tree along with the iterator,
@@ -428,4 +429,147 @@ public class BSTree<T extends Comparable<? super T>> implements Iterable {
         //return BSTree_Iterator from the class BSTree
         return new BSTree_Iterator();
     }
+
+    /**
+     * return the overlapping nodes of two iterators in an arrayList
+     * @param iter1
+     * @param iter2
+     * @return the overlapped elements in an array list
+     */
+    public ArrayList<T> intersection(Iterator<T> iter1, Iterator<T> iter2){
+        //Implement a method that returns the
+        // intersection of two BSTrees (Elements that can be found in both BSTs).
+        // The method takes two iterators as parameter
+        // and returns an ArrayList containing the intersection data of the two trees
+        ArrayList<T> result = new ArrayList<>();
+        ArrayList<T> iter1List = new ArrayList<>();
+        ArrayList<T> iter2List = new ArrayList<>();
+        while (iter1.hasNext()) {
+            iter1List.add(iter1.next());
+        }
+        while (iter2.hasNext()) {
+            iter2List.add(iter2.next());
+        }
+        if (iter1List.size() > iter2List.size()) {
+            for (int i = 0; i < iter1List.size(); i++) {
+                if (iter2List.contains(iter1List.get(i))) {
+                    result.add(iter1List.get(i));
+                }
+            }
+        }
+        else {
+            for (int i = 0; i < iter2List.size(); i++) {
+                if (iter1List.contains(iter2List.get(i))) {
+                    result.add(iter2List.get(i));
+                }
+            }
+        }
+        return result;
+    }
+
+    /**
+     * count the number of integers at certain levels
+     * @param level
+     * @return interger of number of nodes
+     */
+    public int levelCount(int level) {
+        //Implement a method that counts the number of nodes at a given level.
+        // The method takes a level as a parameter and returns the count of nodes at that level.
+        if (level > findHeight()) {
+            return -1;
+        }
+
+        return levelCountHelper(root, 0, level);
+    }
+
+    /**
+     * count the number of nodes at a certain level
+     * heper method for levelCount
+     * @param cur
+     * @param curLevel
+     * @param tarLevel
+     * @return number of nodes
+     */
+    public int levelCountHelper(BSTNode cur, int curLevel, int tarLevel)
+    {
+        //base case when the current level is null, greater than or equal
+        // to the tarLevel
+        if(cur == null)
+            return 0;
+        if(curLevel > tarLevel)
+            return 0;
+        if(curLevel == tarLevel)
+            return 1;
+        // separate recursion call of left and right
+        return levelCountHelper(cur.left, curLevel + 1, tarLevel) +
+                levelCountHelper(cur.right, curLevel + 1, tarLevel);
+    }
+
+    /**
+     *
+     * @param data
+     * @return true if the deletion is successful, false otherwise
+     */
+
+    public boolean remove(T data)
+    {
+        if(!findKey(data))
+            return false;
+        root = removeHelper(root, data);
+        return true;
+    }
+
+    /**
+     * helper method for remove
+     * A recursive function to insert a new key in BST
+     * @param root
+     * @param data
+     * @return the deleted node
+     */
+    private BSTNode removeHelper(BSTNode root, T data)
+    {
+        /* Base Case: If the tree is empty */
+        if (root == null)  return null;
+
+        /* Otherwise, recur down the tree */
+        if (data.compareTo(root.key) < 0)
+            root.left = removeHelper(root.left, data);
+        else if (data.compareTo(root.key) > 0)
+            root.right = removeHelper(root.right, data);
+
+            // if key is same as root's key, then This is the node
+            // to be deleted
+        else
+        {
+            // node with only one child or no child
+            if (root.left == null && root.right != null) {
+                return root.right;
+            }
+            else if (root.right == null && root.left != null) {
+                return root.left;
+            }
+            else if (root.right == null && root.left == null) {
+                return null;
+            }
+            // node with two children: Get the inorder successor (smallest
+            // in the right subtree)
+            else
+            {
+                BSTNode minRight = root.right;
+                BSTNode prev = root;
+                while(minRight.left != null) {
+                    prev = minRight;
+                    minRight = minRight.left;
+                }
+                prev.left = minRight.right;
+                minRight.right = root.right;
+                minRight.left = root.left;
+                return minRight;
+            }
+        }
+        return root;
+    }
+
+
+
 }
